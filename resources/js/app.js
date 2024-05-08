@@ -121,7 +121,7 @@ if (document.querySelector('.js-admin-container')){
             const formData = new FormData();
             formData.append('id', id);
 
-            fetch('/delete-song/', {
+            fetch('/delete-song', {
                 method: 'post',
                 headers: {
                     "X-CSRF-Token": _CSRF
